@@ -1,7 +1,7 @@
 # function to be called from session level
-# $ python -c "from PyHippocampus import raycast; raycast.raycast(100)"
+# $ python -c "from PyHipp import raycast; raycast.raycast(100)"
 
-import PyHippocampus as pyh
+import PyHipp as pyh
 import numpy as np
 import hdf5storage as h5s
 import os
