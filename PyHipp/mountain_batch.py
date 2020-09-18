@@ -1,6 +1,6 @@
 import numpy as np
 import os 
-import PyHippocampus as pyh
+import PyHipp as pyh
 import csv
 from mountainlab_pytools import mdaio
 from shutil import copyfile
