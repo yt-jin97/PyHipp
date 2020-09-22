@@ -7,6 +7,7 @@ from shutil import copyfile
 import subprocess
 import hickle as hkl
 import DataProcessingTools as DPT
+import time
 
 def mountain_batch(target='',Overwrite='No'):
     c_p = os.getcwd()
@@ -147,6 +148,8 @@ def comb_channels_ms():
                         
                                 
 def mountain_channel(full_cell, index):
+    print(time.localtime())
+    t0 = time.time()
     print('processing channel')
     origin = os.getcwd()
     mountains_path = origin + '/mountains'
@@ -229,14 +232,8 @@ def mountain_channel(full_cell, index):
     os.system('rm output/pre.mda')
     print('finished for this channel')
     os.chdir(origin)
-            
+    print(time.localtime())
+    print(time.time()-t0)
             
 
 #print(mountain_batch('120',Overwrite='No'))
-        
-
-    
-
-                                
-                                
-                            
