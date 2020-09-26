@@ -217,7 +217,7 @@ def aligning_objects():
         uf.unityTime[0] += true_session_start  
        
     else:
-        print('session start marker not recognised')
+        print('session start marker not recognized')
         print('unable to align timings accurately for now')        
     
         
@@ -248,7 +248,7 @@ def aligning_objects():
     uf.save()
     el.save()
     
-    print('finish aligning objects')
+    print('finished aligning objects')
             
 
 
